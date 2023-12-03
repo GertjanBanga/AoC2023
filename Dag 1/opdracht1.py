@@ -1,17 +1,10 @@
-import numpy as np
-array = np.genfromtxt("Dag 1/input.txt", dtype=float)
+with open("Dag 1/input.txt",'r') as data_file:
+    for line in data_file:
+        data = line.split()
+        for i in range(len(data)):
+            
 
-beneden = -1
-voriggetal = 0
-omhoog = 0
+for line in sys:
+    print(line)
+    counter += 1
 
-for line in array:
-    if line > voriggetal:
-        beneden+=1
-        voriggetal = line
-    else:
-        omhoog+=1
-        voriggetal = line
-
-print(beneden)
-print(omhoog)
