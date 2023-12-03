@@ -2,7 +2,6 @@ $invoer = Get-Content -Path "C:/Users/gertjanb/OneDrive - Delta-N/#Scripts/Adven
 $Opgeteld = 0
 
 foreach ($regel in $invoer) {
-    # $EersteGetal = ExtractFirstDigit -s $regel
     If ($regel) {
         $EersteGetal  = ([char[]]$regel | Where-Object { $_ -match "\d"} | Select-Object -First 1)
         $LaatsteGetal = ([char[]]$regel | Where-Object { $_ -match "\d"} | Select-Object -Last 1)
