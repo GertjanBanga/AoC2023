@@ -1,5 +1,5 @@
-$times=41,66,72,66
-$distancesRecords=244,1047,1228,1040
+$times=41667266
+$distancesRecords=244104712281040
 $counter=0
 $press=0
 $distanceNewRecord=0

@@ -7,7 +7,6 @@ while ($press -lt $time) {
         $distance=($time-$press)*$press
         If ($distance -gt $distancesRecord) {
             $distanceNewRecord+=1
-            Write-Host $distanceNewRecord
         }
         $press+=1
     }
